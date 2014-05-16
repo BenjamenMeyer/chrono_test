@@ -12,8 +12,8 @@ link_directories( ${Boost_LIBRARY_DIR} )
 ADD_EXECUTABLE(chrono test.cpp)
 TARGET_LINK_LIBRARIES(chrono ${Boost_LIBRARIES})
 
-ADD_EXECUTABLE(chrono-test test-test.cpp)
-TARGET_LINK_LIBRARIES(chrono-test ${Boost_LIBRARIES})
+ADD_EXECUTABLE(chrono_test test-test.cpp)
+TARGET_LINK_LIBRARIES(chrono_test ${Boost_LIBRARIES})
 
 ENABLE_TESTING()
-ADD_TEST(chrono-test test-test.cpp)
+ADD_TEST(chrono_test chrono_test) 

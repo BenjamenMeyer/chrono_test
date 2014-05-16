@@ -1,0 +1,9 @@
+Makefile
+CMakeFiles
+CMakeCache.txt
+Testing
+*.o
+chrono
+chrono_test
+*.cmake
+*.swp

@@ -18,8 +18,9 @@ BOOST_AUTO_TEST_CASE( chrono_test )
   boost::posix_time::time_duration chrono_to_posix = boost::posix_time::milliseconds(chrono_duration.count());
 
 
-  BOOST_MESSAGE( "Chrono Count: "<<chrono_duration.count() );
+  BOOST_MESSAGE("Chrono Count: " << chrono_duration.count());
   BOOST_CHECK( posix_duration == chrono_to_posix );
+  BOOST_CHECK_MESSAGE( posix_duration == chrono_to_posix, "Failed : Count " << chrono_to_posix.total_milliseconds() <<  " != " << posix_duration.total_milliseconds() );
 }
 
 BOOST_AUTO_TEST_SUITE_END();

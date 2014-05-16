@@ -16,4 +16,4 @@ ADD_EXECUTABLE(chrono_test test-test.cpp)
 TARGET_LINK_LIBRARIES(chrono_test ${Boost_LIBRARIES})
 
 ENABLE_TESTING()
-ADD_TEST(chrono_test chrono_test) 
+ADD_TEST(NAME chrono_test COMMAND chrono_test) 
